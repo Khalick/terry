@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://www.terryodongo.com/">
     <meta property="og:title" content="Terry Odongo - Expert Nutritionist in Kenya | Thika & Nairobi">
     <meta property="og:description" content="Board-Certified Registered Dietitian Nutritionist offering personalized nutrition services in Thika and Nairobi, Kenya. Medical nutrition therapy, weight management, diabetes care.">
-    <meta property="og:image" content="WhatsApp%20Image%202026-01-01%20at%2014.21.14.jpeg">
+    <meta property="og:image" content="hero.jpeg">
     <meta property="og:locale" content="en_KE">
     
     <!-- Twitter -->
@@ -70,21 +70,25 @@
       },
       "sameAs": [
         "https://youtube.com/@terryodongo-m8h",
-        "https://www.facebook.com/profile.php?id=100079469794351"
+        "https://www.facebook.com/profile.php?id=100079469794351",
+        "https://www.linkedin.com/in/terry-odongo-86551b3a2"
       ]
     }
     </script>
     
     <style>
+        /* Glass Morphism Portfolio v2.0 - Updated Jan 2026 */
+        /* CSS Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
+        /* Ensure backdrop-filter support */
+        @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {\n            .hero, .about, .services, .mission, .expertise, .approach, .testimonials, .faq, .contact, nav {\n                backdrop-filter: blur(25px) !important;\n                -webkit-backdrop-filter: blur(25px) !important;\n            }\n        }\n\n        /* Fallback for browsers without backdrop-filter support */\n        @supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {\n            .hero, .about, .services, .mission, .expertise, .approach, .testimonials, .faq, .contact {\n                background: rgba(255, 255, 255, 0.85) !important;\n            }\n            nav {\n                background: rgba(255, 255, 255, 0.95) !important;\n            }\n        }\n\n        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('WhatsApp%20Image%202026-01-01%20at%2014.54.44.jpeg') fixed center/cover no-repeat;
+            background: url('background.jpeg') fixed center/cover no-repeat;
             color: #2c3e50;
             overflow-x: hidden;
             position: relative;
@@ -1157,7 +1161,7 @@
         </div>
         
         <div class="hero-image">
-            <img src="WhatsApp Image 2026-01-01 at 14.21.14.jpeg" alt="Terry Odongo - Clinical Nutritionist">
+            <img src="hero.jpeg" alt="Terry Odongo - Clinical Nutritionist">
         </div>
     </section>
 
@@ -1165,7 +1169,7 @@
     <section class="about reveal" id="about">
         <div class="about-container">
             <div class="about-image">
-                <img src="WhatsApp Image 2026-01-01 at 14.46.09.jpeg" alt="Terry Odongo Professional Profile">
+                <img src="about.jpeg" alt="Terry Odongo Professional Profile">
             </div>
             <div class="about-content">
                 <h2>My Journey</h2>
@@ -1200,7 +1204,7 @@
     <section class="mission reveal">
         <div class="mission-content">
             <div style="max-width: 800px; margin: 0 auto 3rem;">
-                <img src="WhatsApp Image 2026-01-01 at 14.46.09.jpeg" alt="Terry Odongo Nutritionist" style="width: 100%; height: auto; border-radius: 8px; display: block;">
+                <img src="about.jpeg" alt="Terry Odongo Nutritionist" style="width: 100%; height: auto; border-radius: 8px; display: block;">
             </div>
             <h2>My Philosophy</h2>
             <p>Real health transformation comes from understanding each person's unique biochemical makeup, lifestyle factors, and cultural context. It's not about generic meal plans or restrictive diets.</p>
@@ -1215,7 +1219,7 @@
         <p class="section-subtitle">Comprehensive nutritional care tailored to your unique needs</p>
         
         <div style="max-width: 1200px; margin: 0 auto 4rem; text-align: center;">
-            <img src="WhatsApp Image 2026-01-01 at 14.45.59.jpeg" alt="Terry Odongo Professional Services" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; display: inline-block;">
+            <img src="testimonial.jpeg" alt="Terry Odongo Professional Services" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; display: inline-block;">
         </div>
         
         <div class="services-grid">
@@ -1300,7 +1304,7 @@
         <p class="section-subtitle">A systematic, personalized methodology for lasting results</p>
         
         <div style="max-width: 1200px; margin: 0 auto 4rem; text-align: center;">
-            <img src="WhatsApp Image 2026-01-01 at 14.46.09.jpeg" alt="Terry Odongo Consultation Approach" style="width: 100%; max-width: 900px; height: auto; border-radius: 8px; display: inline-block;">
+            <img src="about.jpeg" alt="Terry Odongo Consultation Approach" style="width: 100%; max-width: 900px; height: auto; border-radius: 8px; display: inline-block;">
         </div>
         
         <div class="approach-content">
@@ -1337,7 +1341,7 @@
         
         <div class="testimonial-container">
             <div class="testimonial-image">
-                <img src="WhatsApp Image 2026-01-01 at 14.45.59.jpeg" alt="Clinical Nutrition Consultation">
+                <img src="testimonial.jpeg" alt="Clinical Nutrition Consultation">
             </div>
             <div class="testimonial-content">
                 <p class="testimonial-text">"The medical nutrition therapy protocol completely transformed my metabolic health. Through evidence-based interventions and personalized dietary modifications, my HbA1c decreased from 8.2% to 5.9% within six months. The clinical expertise and comprehensive approach exceeded all expectations."</p>
@@ -1489,6 +1493,18 @@
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                         Follow Page
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Professional network & credentials</p>
+                    <a href="https://www.linkedin.com/in/terry-odongo-86551b3a2" target="_blank" style="color: #0A66C2; font-weight: 600;">
+                        <svg style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        View Profile
                     </a>
                 </div>
             </div>
