@@ -86,7 +86,6 @@
         }
 
         /* Ensure backdrop-filter support */
-        @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {\n            .hero, .about, .services, .mission, .expertise, .approach, .testimonials, .faq, .contact, nav {\n                backdrop-filter: blur(25px) !important;\n                -webkit-backdrop-filter: blur(25px) !important;\n            }\n        }\n\n        /* Fallback for browsers without backdrop-filter support */\n        @supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {\n            .hero, .about, .services, .mission, .expertise, .approach, .testimonials, .faq, .contact {\n                background: rgba(255, 255, 255, 0.30) !important;\n            }\n            nav {\n                background: rgba(255, 255, 255, 0.30) !important;\n            }\n        }\n\n        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: transparent;
             background-image: url('background.jpeg?v=2');
@@ -105,8 +104,6 @@
             position: fixed;
             width: 100%;
             background: transparent;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.30);
             padding: 1.5rem 5%;
             display: flex;
@@ -166,8 +163,6 @@
             overflow: hidden;
             gap: 6rem;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
             border-radius: 20px;
             margin: 2rem;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -267,16 +262,12 @@
         .services {
             padding: 8rem 5%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         /* About Section */
         .about {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         .about-container {
@@ -385,8 +376,6 @@
 
         .service-card {
             background: transparent;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             padding: 3rem;
             border-radius: 8px;
             transition: all 0.3s ease;
@@ -423,8 +412,6 @@
         .mission {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
             color: #1a1a1a;
             text-align: center;
             border-top: 1px solid #e0e0e0;
@@ -452,8 +439,6 @@
         .expertise {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         .expertise-grid {
@@ -466,8 +451,6 @@
 
         .expertise-item {
             background: transparent;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             padding: 2.5rem;
             border-radius: 8px;
             text-align: center;
@@ -495,8 +478,6 @@
         .approach {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         .approach-content {
@@ -510,8 +491,6 @@
         .approach-step {
             padding: 2.5rem;
             background: transparent;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.30);
             transition: all 0.3s ease;
@@ -551,8 +530,6 @@
         .testimonials {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         .testimonial-container {
@@ -579,8 +556,6 @@
 
         .testimonial-content {
             background: transparent;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             padding: 4rem;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.30);
@@ -604,8 +579,6 @@
         .contact {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         .contact-content {
@@ -623,8 +596,6 @@
 
         .contact-card {
             background: transparent;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             padding: 2.5rem;
             border-radius: 8px;
             transition: all 0.3s ease;
@@ -686,8 +657,6 @@
         .faq {
             padding: 8rem 8%;
             background: transparent;
-            backdrop-filter: blur(25px);
-            -webkit-backdrop-filter: blur(25px);
         }
 
         .faq-container {
@@ -697,8 +666,6 @@
 
         .faq-item {
             background: transparent;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             margin-bottom: 1.5rem;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.30);
